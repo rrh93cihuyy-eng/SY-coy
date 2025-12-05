@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Kami - RRH</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #00AA13 0%, #00880F 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: white;
+            color: #00AA13;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            background: #00AA13;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .profiles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .profile-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .profile-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #00AA13;
+            margin-bottom: 15px;
+        }
+        
+        .profile-header h2 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .profile-header p {
+            color: #00AA13;
+            font-style: italic;
+            font-weight: 600;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section h3 {
+            color: #00AA13;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #00AA13;
+            font-size: 1.1em;
+        }
+        
+        .biodata p {
+            color: #555;
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        
+        .biodata strong {
+            color: #333;
+            display: inline-block;
+            width: 120px;
+        }
+        
+        .education-item {
+            background: #f8f9fa;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #00AA13;
+        }
+        
+        .education-item h4 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .education-item p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .skills ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .skills li {
+            background: #00AA13;
+            color: white;
+            padding: 8px 15px;
+            margin: 8px 0;
+            border-radius: 20px;
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 0.9em;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00880F;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+            font-size: 0.9em;
+        }
+        
+        .social-links a:hover {
+            background: #00AA13;
+        }
+        
+        @media (max-width: 768px) {
+            .back-button {
+                top: 10px;
+                left: 10px;
+                padding: 10px 18px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 2em;
+                margin-top: 40px;
+            }
+            
+            .profiles {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">
+        ← Kembali
+    </a>
+
+    <div class="container">
+        <h1>Profil Tim Kami</h1>
+        
+        <div class="profiles">
+            <!-- Profil 1 - Rafa -->
+            <div class="profile-card">
+                <div class="profile-header">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8bEhDhaihYTYV-KuphFxGe2mG9qyhr4ZbZb_1gHBL463wOsnh-pnzZ4cUaZGHwMEHiH910Pv23znB7pMuJTMtMCJ3YNRPE02axTSWEps&s=10" alt="Foto Rafa" class="profile-photo">
+                    <h2>Rafa</h2>
+                    <p>Idea Konsep & Little Code</p>
+                </div>
+                
+                <div class="section biodata">
+                    <h3>Biodata</h3>
+                    <p><strong>Nama Lengkap:</strong> Rafa Rabbani Herawan</p>
+                    <p><strong>Tanggal Lahir:</strong> 23 Mei 2010</p>
+                    <p><strong>Alamat:</strong> Jl. Garu IX No 11, Bandung</p>
+                </div>
+                
+                <div class="section education">
+                    <h3>Riwayat Pendidikan</h3>
+                    <div class="education-item">
+                        <h4>SMP Negeri 37 Bandung</h4>
+                        <p>Sekolah Menengah Pertama | 2022 - 2024</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>SD Negeri 191 Bandung</h4>
+                        <p>Sekolah Dasar | 2016 - 2021</p>
+                    </div>
+                </div>
+                
+                <div class="section skills">
+                    <h3>Keterampilan</h3>
+                    <ul>
+                        <li>HTML & CSS Ringan ajah</li>
+                        <li>Konsep Kreatif tipis tipis</li>
+                        <li>Mancing</li>
+                        <li>Bengong</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h3>Media Sosial</h3>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@rrh.93?_r=1&_t=ZS-91xfI1Vita4" target="_blank">🎵 TikTok</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Profil 2 - Emonnn -->
+            <div class="profile-card">
+                <div class="profile-header">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Emon" alt="Foto Emonnn" class="profile-photo">
+                    <h2>Abdillah</h2>
+                    <p>Designer PH</p>
+                </div>
+                
+                <div class="section biodata">
+                    <h3>Biodata</h3>
+                    <p><strong>Nama Lengkap:</strong> Muhammad Abdillah Egamon</p>
+                    <p><strong>Tanggal Lahir:</strong> 32 Desember 2026</p>
+                    <p><strong>Alamat:</strong> Jl. Jalan Bersama Dia</p>
+                </div>
+                
+                <div class="section education">
+                    <h3>Riwayat Pendidikan</h3>
+                    <div class="education-item">
+                        <h4>SMPN 35 Bandung</h4>
+                        <p>2021 - 2024</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>SMK2BOYS</h4>
+                        <p>Jurusan LEGEG | 2014 - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="section skills">
+                    <h3>Keterampilan</h3>
+                    <ul>
+                        <li>Sigma</li>
+                        <li>Main</li>
+                        <li>Makan</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>Minum</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h3>Media Sosial</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank">📷 Instagram</a>
+                        <a href="#" target="_blank">💼 LinkedIn</a>
+                        <a href="#" target="_blank">🎨 Behance</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Profil 3 - Albany -->
+            <div class="profile-card">
+                <div class="profile-header">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Albany" alt="Foto Albany" class="profile-photo">
+                    <h2>Albany R.R</h2>
+                    <p>Jago dari Lahir</p>
+                </div>
+                
+                <div class="section biodata">
+                    <h3>Biodata</h3>
+                    <p><strong>Nama Lengkap:</strong> Albany Reyviansyah Rustandi</p>
+                    <p><strong>Tanggal Lahir:</strong> 23 Juli 2009</p>
+                    <p><strong>Alamat:</strong> Jl. Dago Pojok Tanggulan No.96</p>
+                </div>
+                
+                <div class="section education">
+                    <h3>Riwayat Pendidikan</h3>
+                    <div class="education-item">
+                        <h4>SMPN 35 Bandung</h4>
+                        <p>2021 - 2024</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>SDN 103 Coblong</h4>
+                        <p>2016 - 2021</p>
+                    </div>
+                </div>
+                
+                <div class="section skills">
+                    <h3>Keterampilan</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>Mobile Legend</li>
+                        <li>Game</li>
+                        <li>Roblox</li>
+                        <li>Mancing</li>
+                        <li>Mewing</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h3>Media Sosial</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank">📷 Instagram</a>
+                        <a href="#" target="_blank">🎮 Gaming</a>
+                        <a href="#" target="_blank">💼 LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
